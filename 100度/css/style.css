@@ -1,0 +1,174 @@
+/* 样式重置 */
+*{
+    margin: 0;
+    padding: 0;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+dd,
+ul,
+ol,
+form,
+input,
+textarea,
+th,
+td,
+select {
+    margin: 0;
+    padding: 0;
+}
+
+em {
+    font-style: normal;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+img {
+    border: none;
+    vertical-align: top;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+input,
+textarea {
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    overflow: auto;
+}
+
+body {
+    font-size: 12px;
+    font-family: "微软雅黑";
+}
+
+/* 公共样式 */
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clear {
+    zoom: 1;
+}
+
+.clear:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+/* 渐变 */
+.gradient {
+    background: -moz-linear-gradient(top, white, #f8f8f8);
+    background: -webkit-linear-gradient(top, white, #f8f8f8);
+    background: -ms-linear-gradient(top, white, #f8f8f8);
+    background: linear-gradient(top, white, #f8f8f8);
+}
+.triangle_down,.triangle_up{
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow:hidden;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+
+}
+/* .triangle_up_red{border-bottom: 4px solid #ca0309}
+.triangle_down_red{border-top: 4px solid #ca0309}
+.triangle_down_gray{border-top: 4px solid #c4bdbd} */
+
+.main_title{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+}
+.main_title strong{color: #cc0d13;font-family: '微软雅黑';font-size: 12px;float: left;}
+.main_title span{color: black;font-weight: bold;}
+.main_title a{position: absolute;top: 13px;right: 0;}
+
+
+
+.tab{height: 25px;border-bottom: 1px solid #dadada;}
+/* .tab ul{height: 26px;margin-bottom: -1px;} */
+.tab ul li {
+    
+    height: 24px;
+    float: left;
+    border: 1px solid #dadada;
+    background: -moz-linear-gradient(top, white, #f8f8f8);
+    border-bottom: none;
+    border-radius: 2px 2px 0 0;
+    text-align: center;
+    line-height: 24px;
+    color: #666666;
+    cursor: pointer;
+    position: relative;
+}
+    .tab ul li .triangle_down{position: absolute;right: 11px;top:10px;border-top: 4px solid #c4bdbd;}
+    .tab ul .active{height: 25px;background: #fff;font-weight: bold;color: #454545;}
+.tab ul .active .triangle_down{border-top: 4px solid #cc0d13;}
+
+
+.section .tab{padding: 0 10px;}
+.section .tab ul li{width: 98px;}
+.side_section .tab{padding: 0 6px;}
+.side_section .tab ul li{width: 66px;}
+
+/* list_section */
+
+.list_section li{height: 27px;line-height: 27px;border-top: 1px dotted #dadada;
+    background: url(../img/dot.gif)no-repeat 5px center;
+    /* list-style-type: square;
+    color: #d80000; */
+    /* list-style: url(../img/dot.gif); */
+
+     }
+.list_section .col1,.list_section .col2,.list_section .col3{float: left;}
+.list_section .col1{width: 66%;}
+.list_section .col2{width: 16%;color: #d80000;text-align: center;}
+.list_section .col3{width: 15%;color: #999999;text-align: center;}
+.list_section li a{color: #333333;float: left;text-indent: 14px;}
+.list_section li a:hover{text-decoration: underline;color: #d80000;}
+.list_section li a em{color: #c3c3c3;}
+.list_section li a span{color: #c75d61;}
+.list_section .li_nav{border: none;background:none;color: #999999;text-align: center;height: 32px;line-height: 32px;}
+
+.section .list_section .col1{width: 82%;}
+.section .list_section .col2 img{position: relative;top: 8px;}
+
+
+/* new_title */
+.activity,.recommend{width: 348px;border-radius: 6px;border: 1px solid #dbdbdb;}
+.recommend .new_title{background: url(../img/new_title_bg.gif)no-repeat right -70px;}
+.new_title{height: 70px;position: relative;background: url(../img/new_title_bg.gif)no-repeat right 0;}
+.new_title strong{font-size: 12px;color: #ea2b31;font-family: Arial;position: absolute;left: 24px;top: 19px;}
+.new_title span{font-size: 24px;color: #333333;position: absolute;left: 24px;top: 31px;}
+.new_title em{font-weight: bold;font-size: 36px;color: #ec1c16;position: absolute;left: 125px;top: 16px;}
